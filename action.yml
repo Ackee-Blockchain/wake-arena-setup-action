@@ -1,0 +1,9 @@
+# action.yml
+name: 'Wake Arena Setup'
+description: 'Setups an environment for Wake Arena'
+branding:
+  icon: 'package'
+  color: 'purple'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
