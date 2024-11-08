@@ -1,0 +1,1 @@
+# wake-arena-setup-action
