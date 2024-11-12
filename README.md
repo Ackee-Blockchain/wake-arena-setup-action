@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Wake environment
-        uses: Ackee-Blockchain/wake-arena-setup-action@0.1.0
+        uses: Ackee-Blockchain/wake-arena-setup-action@0.1.1
 
       - name: Wake up
-        run: wake --version
+        run: wake-arena --help
 ```
 
-In the above example, the action is used after the code is checked out to set up an environment (install Wake and Foundry) and in the last step the `wake` command is executed.
+In the above example, the action is used after the code is checked out to set up an environment (install Wake Arena) and in the last step the `wake` command is executed.
